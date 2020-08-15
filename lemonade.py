@@ -4,12 +4,12 @@ from tensorflow.python.client import device_lib
 
 ###########################
 # 데이터를 준비합니다.
-파일경로 = 'data.csv'
-레모네이드 = pd.read_csv(파일경로)
-레모네이드.head()
+파일경로 = 'AMD.csv'
+주식 = pd.read_csv(파일경로)
+주식.head()
 # 종속변수, 독립변수
-독립 = 레모네이드[['date']]
-종속 = 레모네이드[['price']]
+독립 = 주식[['date']]
+종속 = 주식[['price']]
 print(독립.shape, 종속.shape)
 ###########################
 # 모델을 만듭니다.
